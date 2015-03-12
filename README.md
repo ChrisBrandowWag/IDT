@@ -9,11 +9,13 @@ For this to work you must first install appium:
 http://appium.io/
 
 Install Appium:
-> brew install node      # get node.js
-> npm install -g appium  # get appium
-> npm install wd         # get appium client
-> npm install mocha      # install mocha
-> appium               	 # start appium
+>
+- brew install node      # get node.js
+- npm install -g appium  # get appium
+- npm install wd         # get appium client
+- npm install mocha      # install mocha
+- npm install package.json #install dependecies
+- appium               	 # start appium
 
 Install Xcode:
 - Go to the mac appstore and install Xcode 6.2
@@ -29,11 +31,11 @@ Once Ready, run "mocha your-appium-test.js" to begin executing the test.
 All of the output can be found in the /Build directory.
 
 --
-IDT Command Line Application
+#IDT Command Line Application
 The IDT Command line App is the unit that does the actual image comparison between the base screenshot and the generated UI screenshot. It can be used as a standalone tool.
 
 Usage:
-IDT original_image.png test_image.png <threshold_value> <verbose(optional)>
+IDT original_image.png test_image.png threshold_value _verbose(optional)_
 
 Output:
 Console.out = PASS | FAIL
